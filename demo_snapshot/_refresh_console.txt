@@ -1,0 +1,54 @@
+=== refresh_snapshot_from_live starting ===
+=== connect ===
+=== radar (live) ===
+radar_raw rows 528 cols ['skill', 'peer_postings_share_growth', 'peer_hires_share_growth', 'peer_headcount', 'peer_share', 'company_share', 'economy_share', 'lift', 'peer_postings', 'is_specialized', 'lift_floor']
+build_radar rows 528
+buckets:
+bucket
+declining    393
+other         63
+core          45
+emerging      22
+nascent        5
+=== select_target ===
+TARGET Data Analysis
+           skill  momentum  pct_of_peer  feeder_roles  supply_heads  passes
+   Data Analysis       0.6         77.5            12         135.3    True
+Energy Economics       0.4         25.2             0           0.0   False
+=== roles ===
+roles 25 peer_roles 25
+=== pathways / external for Data Analysis ===
+paths 12 metros 19 outflows 10
+=== company attrition ===
+company_attrition 0.05560336068620659
+=== populations (17) + peer floors (1) ===
+  pop [1/17] Data Analysis: hc=2535 attr=9.2%
+  pop [2/17] Energy Economics: hc=188 attr=3.9%
+  pop [3/17] Process: hc=26490 attr=6.2%
+  pop [4/17] Lean Quality: hc=27286 attr=5.4%
+  pop [5/17] Engineering Project Delivery: hc=33298 attr=5.4%
+  pop [6/17] Production Engineering: hc=31020 attr=5.5%
+  pop [7/17] Manufacturing: hc=22835 attr=5.6%
+  pop [8/17] Production: hc=19472 attr=5.1%
+  pop [9/17] Engineering Simulation: hc=30406 attr=6.6%
+  pop [10/17] Windows Systems: hc=24839 attr=6.4%
+  pop [11/17] Graphics Programming: hc=29366 attr=6.5%
+  pop [12/17] Embedded Systems Engineering: hc=31625 attr=5.6%
+  pop [13/17] Electrical Design: hc=20997 attr=6.6%
+  pop [14/17] Electrical Engineering: hc=24199 attr=5.3%
+  pop [15/17] Vehicle Engineering: hc=17592 attr=5.9%
+  pop [16/17] CAD Drafting: hc=16057 attr=7.3%
+  pop [17/17] Software Testing: hc=27298 attr=4.9%
+  floor [1/1] Data Analysis: 10.7% (peer_p10, n=39)
+saved dashboard snapshot /data0/data0_ege/demo_snapshot/data-analysis
+wrote /data0/data0_ege/demo_snapshot/_synthetic_from_live.json bytes=148767
+=== codegen synthetic loaders ===
+Traceback (most recent call last):
+  File "/data0/data0_ege/refresh_snapshot_from_live.py", line 562, in <module>
+    main()
+  File "/data0/data0_ege/refresh_snapshot_from_live.py", line 535, in main
+    block = codegen_synthetic(payload)
+  File "/data0/data0_ege/refresh_snapshot_from_live.py", line 200, in codegen_synthetic
+    # Frozen pathways for default target {_SYNTHETIC_DEFAULT_TARGET!r} (offline ignores skill).
+NameError: name '_SYNTHETIC_DEFAULT_TARGET' is not defined
+

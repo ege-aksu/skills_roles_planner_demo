@@ -1,0 +1,23 @@
+{
+  "target": "Data Analysis",
+  "tight": [
+    "washington metropolitan area",
+    "denver metropolitan area"
+  ],
+  "avail": [
+    "new york city metropolitan area",
+    "san francisco metropolitan area"
+  ],
+  "population": 2535.1411710608127,
+  "attrition": 0.09183243497191433,
+  "hiring_rate": 0.1293659109818348,
+  "company": "Lockheed Martin",
+  "company_rcid": 20921805,
+  "company_attrition": 0.05560336068620659,
+  "retention_attrition_floor": 0.10656200111617793,
+  "retention_floor_source": "peer_p10",
+  "retention_floor_n_peers": 39,
+  "retention_floor_percentile": 0.1,
+  "batchtime": "202602",
+  "refreshed": "2026-07-27T21:47:25.953675+00:00"
+}
